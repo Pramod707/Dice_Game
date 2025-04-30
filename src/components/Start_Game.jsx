@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import styled  from 'styled-components'
 const Start_Game = ({toggle}) => {
   return (
-    <Container>
+    <Container className='main'>
        <div>
         <img
            src='./src/assets/dicess.png' alt='dice'
