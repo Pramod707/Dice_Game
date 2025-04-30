@@ -11,9 +11,8 @@ const Start_Game = ({toggle}) => {
        </div>
         <div className='content'>
             <h1>Dice-Game</h1>
-            <Button
-              onClick={toggle}
-            >Play-Now</Button>
+           <Button>Play Now</Button>
+
         </div>
     </Container>
   )
@@ -36,20 +35,5 @@ white-space: nowrap;
    }
     }
    }
-
-`;
-const Button = styled.button`
-color : white;
-padding : 10px,18px;
-background: black;
-min-width: 220px;
-border: none;
-font-size : 25px;
-transition : 0.4s background ease-in;
-&:hover{
-   cursor : pointer;
-   background-color :hsl(193, 46.40%, 53.90%);
-   transition : 0.2s background ease-in;
-}
 
 `;
