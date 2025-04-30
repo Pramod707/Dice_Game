@@ -3,7 +3,7 @@ import Start from './components/Start_Game'
 import GmaePly from './components/GamePlay';
 function App() {
 
-  const [isGameisStarted, setGameisStarted] = useState(false);
+  const [isGameisStarted, setGameisStarted] = useState(true);
 
   function Toggle(){
 

@@ -1,10 +1,10 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from "react";
+import TotalScore from "./totalScore";
 const GamePlay = () => {
   return (
-   <main>
-    <h1>0</h1>
-    <p>Score</p>
-   </main>
-)}
-export default GamePlay
+    <main>
+      <TotalScore />
+    </main>
+  );
+};
+export default GamePlay;

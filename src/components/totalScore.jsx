@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import styled from 'styled-Component'
-const totalScore = () => {
+import styled from 'styled-components'
+const TotalScore = () => {
   return (
     <ScoreContainer>
     <h1>0</h1>
@@ -8,8 +8,17 @@ const totalScore = () => {
    </ScoreContainer>
   )
 }
-export default totalScore
+export default TotalScore
 
 const ScoreContainer = styled.div`
+text-align : center;
+max-Width : 200px;
+  h1{
+  font-size : 100px;
+  }
+  p{
+  font-size: 24px;
+  font-weight: 500px;
   
+  }
 `
