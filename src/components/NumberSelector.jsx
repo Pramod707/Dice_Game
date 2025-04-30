@@ -20,6 +20,12 @@ const NumberSelector = () => {
 };
 export default NumberSelector;
 const NumberContainer = styled.div`
+     
+  display : flex;
+  flex-direction : column;
+  align-items : end;
+  gap : 24px;
+    
   .flex{
     display : flex;
     gap : 24px;

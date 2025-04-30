@@ -16,6 +16,7 @@ const GamePlay = () => {
 export default GamePlay;
 
 const MainContainer = styled.main`
+padding : 70px;
 .topSection{
   display : flex;
   justify-content : space-between;
