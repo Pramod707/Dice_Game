@@ -1,16 +1,27 @@
-import React from "react";
+import React ,{useState}from "react";
 import TotalScore from "./totalScore";
 import NumberSelector from "./NumberSelector";
 import styled from "styled-components";
+import RoleDice from "./RoleDice";
 const GamePlay = () => {
+  const [selectedNumber,setSelectedNumber] = useState();
+     const [currentDice, setCurrentDice] = useState(1);
   return (
-
+  <>
     <MainContainer>
       <div className="topSection">
       <TotalScore />
-      <NumberSelector/>
+      <NumberSelector 
+        selectedNumber={selectedNumber}
+        setSelectedNumber={setSelectedNumber}
+      />
       </div>
+     <RoleDice
+       currentDice = {currentDice}
+       setCurrentDice = {setCurrentDice}
+     />
     </MainContainer>
+     </>
   );
 };
 export default GamePlay;
