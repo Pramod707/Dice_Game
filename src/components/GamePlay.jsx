@@ -19,7 +19,7 @@ const MainContainer = styled.main`
 .topSection{
   display : flex;
   justify-content : space-between;
-  align-items : center;
+  align-items : end;
 }
    
 `
