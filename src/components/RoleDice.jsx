@@ -3,16 +3,13 @@ import styled from 'styled-components';
 import { Button , OutlineButton} from './styled/button';
 
 const RoleDice = ({currentDice, roleDice }) => {
+
   return (
     <DiceContainer>
       <div className='dice' onClick={roleDice}>
         <img src={`./src/assets/D${currentDice}.png`} alt="dice" />
       </div>
       <p>Roll the Dice</p>
-      <div className='btns'>
-      <OutlineButton>Reset</OutlineButton>
-      <Button>Rules</Button>
-      </div>
     </DiceContainer>
   );
 };
@@ -33,10 +30,5 @@ const DiceContainer = styled.div`
   .dice {
     cursor: pointer;
   }
-    .btns{
-      display : flex;
-      flex-direction : column;
-      gap : 16px;
-      
-    }
+  
 `;
